@@ -1,43 +1,31 @@
----
-layout: home
-title: Home
-landing-title: 'COVID-19 Statistics and Research'
-description: 'This website aims to help increase the public’s understanding of the evolving COVID-19.'
-image: null
-author: 'Miquel Oliver & Xisco Jimenez Forteza'
-show_tile: true
----  
+I"wS<div w3-include-html="./assets/tables/last_update.html"></div>
 
-<div w3-include-html="./assets/tables/last_update.html"></div>
-
- 
 <!-- Main -->
 <div id="main">
     <div class="image">
-        <img src="{% link assets/images/Sigmoid-simulation-linear.png %}" alt="" data-position="center center" width="100%"/>
+        <img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" width="100%" />
     </div>
         <div class="row top-buffer1"></div>
-<p>In this figure we compare the current number of COVID-19 fatalities to date shown with color dots, with the multiple projections drawn from the posterior predictive distribution; these projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We have defined the zeroth time for each country to the day they announced their first fatality record. The vertical grid lines represent important events that may have affected the growth rate such as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll href="#logistic">logistic model</a> and predict the <code># fatalities (N)</code> for each country analysed here.</p>
+<p>In this figure we compare the current number of COVID-19 fatalities to date shown with color dots, with the multiple projections drawn from the posterior predictive distribution; these projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We have defined the zeroth time for each country to the day they announced their first fatality record. The vertical grid lines represent important events that may have affected the growth rate such as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll="" href="#logistic">logistic model</a> and predict the <code># fatalities (N)</code> for each country analysed here.</p>
     <div class="image">
-        <img src="{% link assets/images/Sigmoid-simulation-log.png %}" alt="" data-position="center center" width="100%"/>
+        <img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
     </div>
     <div class="row top-buffer1"></div>
             <p>This figure shows the same results as the previous one but now we have changed the <code>Total # of deaths</code> axis to a logaritmic scale. This generates a visual straight line at the begining of the outbreak and it "bends down" as it surpasses the inflexion point; this point corresponds to the moment for which the evolution or the growth starts to slow down. Note that our estimates are consistent with a total number of deaths within [2000, 6000] for all countries. These estimates could vary with any relaxation of the measures each country takes.</p>
 </div>
 
 <!-- Two -->
-<h4>Estimated end & the number of fatalities:</h4>
+<h4>Estimated end &amp; the number of fatalities:</h4>
 <div class="row">
   <div class="column">
-            <img src="{% link assets/images/daystoend.png %}" alt="" data-position="center center" width="100%"/>
+            <img src="/forty-jekyll-theme/assets/images/daystoend.png" alt="" data-position="center center" width="100%" />
             <p>Marginalised probability distribution on the number of estimated number of deaths by the end of the outbreak's date, when a country arrives to the flat zone i.e. when the number of deaths per day tends to zero. As we can see in the figure China has already surpassed that point. Remember that the zero in this case corresponds to the latest update and the highest point in the bulb of the distributions is the most likely date for the outbreak to finish.</p>
   </div>
   <div class="column">
-        <img src="{% link assets/images/fatalities.png %}" alt="" data-position="center center" width="100%"/>
+        <img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
         <p>Marginalised probability distribution on the estimated number of deaths. The prediction for China agrees with the 3226 cases reported at 17/09/2020. These cases must be taken as a lower limit to the death estimate number. Any non-expected reburst of the curve make increase the number of cases. An strict confinement of the population is therefore essential.</p>
   </div>
 </div>
-
 
 <section id="one">
     <div class="inner">
@@ -51,12 +39,11 @@ show_tile: true
     </script>
 </section>
 
-
 <!-- Two -->
 <section id="two" class="spotlights">
     <section>
         <div class="content">
-            <img width="350" src="{% link assets/images/pic08.jpg %}" alt="" data-position="center center" />
+            <img width="350" src="/forty-jekyll-theme/assets/images/pic08.jpg" alt="" data-position="center center" />
         </div>
         <div class="content">
             <div class="inner">
@@ -81,7 +68,6 @@ show_tile: true
     </section>
 </section>
 
-
 <div class="row top-buffer"></div>
 
 <section id="three">
@@ -92,7 +78,7 @@ show_tile: true
             </header>
         </div>
         <div id="logistic"></div>
-        <h3>Exponential & logistic growth</h3>
+        <h3>Exponential &amp; logistic growth</h3>
         <p>A population will grow its size according to a growth rate. In the case of exponential growth this rate stays the same regardless of the population size, inducing the population to grow faster and faster as it gets larger, without an end.</p>
         <ul>
             <li>In nature, populations can only grow exponentially during some period, but inevitably the growth rate will ultimately be limited for example by the resource availability.</li>
@@ -107,10 +93,10 @@ show_tile: true
 
         <p>Population ecologists use a variety of mathematical methods to model population dynamics (how populations change in size and composition over time). Some of these models represent growth without environmental constraints, while others include "ceilings" determined by limited resources. Mathematical models of populations can be used to accurately describe changes occurring in a population and, importantly, to predict future changes.</p>    
 <div class="text-align">
-    <img src="{% link assets/images/cartoon_exp_log.png %}" alt="" width="950"/>
+    <img src="/forty-jekyll-theme/assets/images/cartoon_exp_log.png" alt="" width="950" />
     <p>*end of the <a href="https://www.khanacademy.org/science/biology/ecology/population-growth-and-regulation/a/exponential-logistic-growth">khanacademy</a> citation*</p>
 </div>
-        <p>The figure above shows how the logistic and exponential models are constructed; to underestand them better you can watch the video  <a data-scroll href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
+        <p>The figure above shows how the logistic and exponential models are constructed; to underestand them better you can watch the video  <a data-scroll="" href="#bazinga">"Exponential growth and epidemics"</a> bellow.</p> 
         <p>After reading this text it should be obvious to us that the growth of the virus cannot be exponential indefinitely but it has to flatten at some point. One of these functions is the logistic model, used here to predict the number of deaths. </p>
         <h3>The logistic function:</h3>
         <p>If we solve the equation on the right of the previous figure, we obtain the logistic function. A logistic function or logistic curve is S-shaped. This type of curve is known as a sigmoid and its equation is as follows:</p>
@@ -145,7 +131,7 @@ show_tile: true
 
   </div>
   <div class="column" style="background-color:#2d3450;">
-                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <iframe width="100%" height="100%" src="https://www.youtube.com/embed/Kas0tIxDvrg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
   </div>
 </div>
 
@@ -159,15 +145,15 @@ show_tile: true
     <p>Here we show the results of the Bayesian inference parameter estimation. Our goal is to show the inferred probability distributions over the model parameters of interest, the probabilities of models and the probability distributions over predicted data.</p>
     <p>This is a universal approach for fitting models to data. We have defined the generative model for the data, the likelihood function, and a prior distribution over the parameters.</p> 
     <p>The following figures show the results:</p>
-    <img src="{% link assets/images/parameters-c1-c2.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="95%" />
     <p>In this figure we show the results obtained from the posterior i.e. the most likely scenarios given our current model. We show the results for the growth rate value in terms of the total number or deaths predicted by the logistic curves for all the countries.</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/parameters-c3-c1.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="95%" />
     <p>In this figure we show the results obtained for the 'Inflexion day' in terms of the total growth rate; note that the end of the outbreak is simply the double of the 'Inflexion day'.</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/parameters-c3-c2.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="95%" />
     <p>Figure for the 'Total number of deaths' and the 'Inflexion day'.</p>
 </div>
 <div style="overflow: auto; width:100%;">
@@ -188,33 +174,53 @@ show_tile: true
 
   </div>
   <div class="column" style="background-color:#2d3450;">
-            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R13BD8qKeTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R13BD8qKeTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
   </div>
 </div>
-<div class="row top-buffer"></div>
+
 <!-- Sharingbutton Facebook -->
-Share me &#128540;
-<div id="share-buttons">
-<!-- Email -->
-<a href="mailto:?Subject=Simple Share Buttons&amp;Body=I%20saw%20this%20and%20thought%20of%20you!%20 https://simplesharebuttons.com">
-    <img src="https://simplesharebuttons.com/images/somacro/email.png" alt="Email" />
-</a>
+<!-- Sharingbutton Facebook -->
+<p><a class="resp-sharing-button__link" href="https://facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label=""></a></p>
+<div class="resp-sharing-button resp-sharing-button--facebook resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm3.6 11.5h-2.1v7h-3v-7h-2v-2h2V8.34c0-1.1.35-2.82 2.65-2.82h2.35v2.3h-1.4c-.25 0-.6.13-.6.66V9.5h2.34l-.24 2z" /></svg>
+    </div>
+  </div>
+<p>&lt;/a&gt;</p>
 
-<!-- Facebook -->
-<a href="http://www.facebook.com/sharer.php?u=https://simplesharebuttons.com" target="_blank">
-    <img src="https://simplesharebuttons.com/images/somacro/facebook.png" alt="Facebook" />
-</a>
+<!-- Sharingbutton Twitter -->
+<p><a class="resp-sharing-button__link" href="https://twitter.com/intent/tweet/?text=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;url=http%3A%2F%2Fsharingbuttons.io" target="_blank" rel="noopener" aria-label=""></a></p>
+<div class="resp-sharing-button resp-sharing-button--twitter resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm5.26 9.38v.34c0 3.48-2.64 7.5-7.48 7.5-1.48 0-2.87-.44-4.03-1.2 1.37.17 2.77-.2 3.9-1.08-1.16-.02-2.13-.78-2.46-1.83.38.1.8.07 1.17-.03-1.2-.24-2.1-1.3-2.1-2.58v-.05c.35.2.75.32 1.18.33-.7-.47-1.17-1.28-1.17-2.2 0-.47.13-.92.36-1.3C7.94 8.85 9.88 9.9 12.06 10c-.04-.2-.06-.4-.06-.6 0-1.46 1.18-2.63 2.63-2.63.76 0 1.44.3 1.92.82.6-.12 1.95-.27 1.95-.27-.35.53-.72 1.66-1.24 2.04z" /></svg>
+    </div>
+  </div>
+<p>&lt;/a&gt;</p>
 
-<!-- Tumblr-->
-<a href="http://www.tumblr.com/share/link?url=https://simplesharebuttons.com&amp;title=Simple Share Buttons" target="_blank">
-    <img src="https://simplesharebuttons.com/images/somacro/tumblr.png" alt="Tumblr" />
-</a>
+<!-- Sharingbutton Tumblr -->
+<p><a class="resp-sharing-button__link" href="https://www.tumblr.com/widgets/share/tool?posttype=link&amp;title=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;caption=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;content=http%3A%2F%2Fsharingbuttons.io&amp;canonicalUrl=http%3A%2F%2Fsharingbuttons.io&amp;shareSource=tumblr_share_button" target="_blank" rel="noopener" aria-label=""></a></p>
+<div class="resp-sharing-button resp-sharing-button--tumblr resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg version="1.1" x="0px" y="0px" width="24px" height="24px" viewBox="0 0 24 24" enable-background="new 0 0 24 24" xml:space="preserve">
+        <path d="M12,0C5.383,0,0,5.383,0,12s5.383,12,12,12s12-5.383,12-12S18.617,0,12,0z M15.492,17.616C11.401,19.544,9.5,17,9.5,14.031 V9.5h-2V8.142c0.549-0.178,1.236-0.435,1.627-0.768c0.393-0.334,0.707-0.733,0.943-1.2c0.238-0.467,0.401-0.954,0.49-1.675H12.5v3h2 v2h-2v3.719c0,2.468,1.484,2.692,2.992,1.701V17.616z" />
+     </svg>
+    </div>
+  </div>
+<p>&lt;/a&gt;</p>
 
-<!-- Twitter -->
-<a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
-    <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
-</a>
-</div>
+<!-- Sharingbutton E-Mail -->
+<p><a class="resp-sharing-button__link" href="mailto:?subject=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking.&amp;body=http%3A%2F%2Fsharingbuttons.io" target="_self" rel="noopener" aria-label=""></a></p>
+<div class="resp-sharing-button resp-sharing-button--email resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm8 16c0 1.1-.9 2-2 2H6c-1.1 0-2-.9-2-2V8c0-1.1.9-2 2-2h12c1.1 0 2 .9 2 2v8z" /><path d="M17.9 8.18c-.2-.2-.5-.24-.72-.07L12 12.38 6.82 8.1c-.22-.16-.53-.13-.7.08s-.15.53.06.7l3.62 2.97-3.57 2.23c-.23.14-.3.45-.15.7.1.14.25.22.42.22.1 0 .18-.02.27-.08l3.85-2.4 1.06.87c.1.04.2.1.32.1s.23-.06.32-.1l1.06-.9 3.86 2.4c.08.06.17.1.26.1.17 0 .33-.1.42-.25.15-.24.08-.55-.15-.7l-3.57-2.22 3.62-2.96c.2-.2.24-.5.07-.72z" /></svg>
+    </div>
+  </div>
+<p>&lt;/a&gt;</p>
+
+<!-- Sharingbutton Pinterest -->
+<p><a class="resp-sharing-button__link" href="https://pinterest.com/pin/create/button/?url=http%3A%2F%2Fsharingbuttons.io&amp;media=http%3A%2F%2Fsharingbuttons.io&amp;description=Super%20fast%20and%20easy%20Social%20Media%20Sharing%20Buttons.%20No%20JavaScript.%20No%20tracking." target="_blank" rel="noopener" aria-label=""></a></p>
+<div class="resp-sharing-button resp-sharing-button--pinterest resp-sharing-button--small"><div aria-hidden="true" class="resp-sharing-button__icon resp-sharing-button__icon--solidcircle">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 0C5.38 0 0 5.38 0 12s5.38 12 12 12 12-5.38 12-12S18.62 0 12 0zm1.4 15.56c-1 0-1.94-.53-2.25-1.14l-.65 2.52c-.4 1.45-1.57 2.9-1.66 3-.06.1-.2.07-.22-.04-.02-.2-.32-2 .03-3.5l1.18-5s-.3-.6-.3-1.46c0-1.36.8-2.37 1.78-2.37.85 0 1.25.62 1.25 1.37 0 .85-.53 2.1-.8 3.27-.24.98.48 1.78 1.44 1.78 1.73 0 2.9-2.24 2.9-4.9 0-2-1.35-3.5-3.82-3.5-2.8 0-4.53 2.07-4.53 4.4 0 .5.1.9.25 1.23l-1.5.82c-.36-.64-.54-1.43-.54-2.28 0-2.6 2.2-5.74 6.57-5.74 3.5 0 5.82 2.54 5.82 5.27 0 3.6-2 6.3-4.96 6.3z" /></svg>
+    </div>
+  </div>
+<p>&lt;/a&gt;</p>
+
 <!-- 
 <div class="row top-buffer"></div>
 <div class="inner">
@@ -225,19 +231,20 @@ Share me &#128540;
 <div class="text-fixed-left">
     <p>....</p> 
     <p>The following figures show the results:</p>
-    <img src="{% link assets/images/Growth-China.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/Growth-China.png" alt="" data-position="center center" width="95%"/>
     <p>.............................................................................</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/Growth-Iran.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/Growth-Iran.png" alt="" data-position="center center" width="95%"/>
     <p>.............................................................................</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/Growth-Italy.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/Growth-Italy.png" alt="" data-position="center center" width="95%"/>
     <p>.............................................................................</p>
 </div>
 <div class="text-fixed-left">
-    <img src="{% link assets/images/Growth-Spain.png %}" alt="" data-position="center center" width="95%"/>
+    <img src="/forty-jekyll-theme/assets/images/Growth-Spain.png" alt="" data-position="center center" width="95%"/>
     <p>.............................................................................</p>
 </div>
 <div class="row top-buffer"></div> -->
+:ET
