@@ -238,7 +238,11 @@ $$N(t)=N(0)e^{(e^{-a(t-c)}))}$$
 <div style="overflow: auto; width:100%;">
     <div w3-include-html="./assets/tables/bay_summarygompertz-model.html"></div>
 </div>
-
+<!-- 
+<div style="overflow: auto; width:100%;">
+    <div w3-include-html="./assets/tables/last_bayes_factor.html"></div>
+</div>
+-->
 <div class="row top-buffer"></div>
 <!-- Sharingbutton Facebook -->
 Share me &#128540;
@@ -262,10 +266,6 @@ Share me &#128540;
 <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank">
     <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
 </a>
-</div>
-
-<div style="overflow: auto; width:100%;">
-    <div w3-include-html="./assets/tables/last_bayes_factor.html"></div>
 </div>
 
 <!-- 
