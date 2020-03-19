@@ -1,14 +1,14 @@
-I"C<div w3-include-html="./assets/tables/last_update.html"></div>
+I"LO<div w3-include-html="./assets/tables/last_update.html"></div>
 
 <!-- Main -->
 <div id="main">
     <div class="image">
-        <img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-linear.png" alt="" data-position="center center" width="100%" />
+        <img src="/forty-jekyll-theme/assets/images/log-modelSigmoid-simulation-linear.png" alt="" data-position="center center" width="100%" />
     </div>
         <div class="row top-buffer1"></div>
 <p>In this figure we compare the current number of COVID-19 fatalities to date shown with color dots, with the multiple projections drawn from the posterior predictive distribution; these projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We have defined the zeroth time for each country to the day they announced their first fatality record. The vertical grid lines represent important events that may have affected the growth rate such as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll="" href="#logistic">logistic model</a> and predict the <code># fatalities (N)</code> for each country analysed here.</p>
     <div class="image">
-        <img src="/forty-jekyll-theme/assets/images/Sigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
+        <img src="/forty-jekyll-theme/assets/images/log-modelSigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
     </div>
     <div class="row top-buffer1"></div>
             <p>This figure shows the same results as the previous one but now we have changed the <code>Total # of deaths</code> axis to a logaritmic scale. This generates a visual straight line at the begining of the outbreak and it "bends down" as it surpasses the inflexion point; this point corresponds to the moment for which the evolution or the growth starts to slow down. Note that our estimates are consistent with a total number of deaths within [2000, 6000] for all countries. These estimates could vary with any relaxation of the measures each country takes.</p>
@@ -18,11 +18,11 @@
 <h4>Estimated end &amp; the number of fatalities:</h4>
 <div class="row">
   <div class="column">
-            <img src="/forty-jekyll-theme/assets/images/daystoend.png" alt="" data-position="center center" width="100%" />
+            <img src="/forty-jekyll-theme/assets/images/daystoendlog-model.png" alt="" data-position="center center" width="100%" />
             <p>Marginalised probability distribution on the number of estimated number of deaths by the end of the outbreak's date, when a country arrives to the flat zone i.e. when the number of deaths per day tends to zero. As we can see in the figure China has already surpassed that point. Remember that the zero in this case corresponds to the latest update and the highest point in the bulb of the distributions is the most likely date for the outbreak to finish.</p>
   </div>
   <div class="column">
-        <img src="/forty-jekyll-theme/assets/images/fatalities.png" alt="" data-position="center center" width="100%" />
+        <img src="/forty-jekyll-theme/assets/images/fatalitieslog-model.png" alt="" data-position="center center" width="100%" />
         <p>Marginalised probability distribution on the estimated number of deaths. The prediction for China agrees with the 3226 cases reported at 17/09/2020. These cases must be taken as a lower limit to the death estimate number. Any non-expected reburst of the curve make increase the number of cases. An strict confinement of the population is therefore essential.</p>
   </div>
 </div>
@@ -145,19 +145,19 @@
     <p>Here we show the results of the Bayesian inference parameter estimation. Our goal is to show the inferred probability distributions over the model parameters of interest, the probabilities of models and the probability distributions over predicted data.</p>
     <p>This is a universal approach for fitting models to data. We have defined the generative model for the data, the likelihood function, and a prior distribution over the parameters.</p> 
     <p>The following figures show the results:</p>
-    <img src="/forty-jekyll-theme/assets/images/parameters-c1-c2.png" alt="" data-position="center center" width="95%" />
+    <img src="/forty-jekyll-theme/assets/images/parameterslog-model-c1-c2.png" alt="" data-position="center center" width="95%" />
     <p>In this figure we show the results obtained from the posterior i.e. the most likely scenarios given our current model. We show the results for the growth rate value in terms of the total number or deaths predicted by the logistic curves for all the countries.</p>
 </div>
 <div class="text-fixed-left">
-    <img src="/forty-jekyll-theme/assets/images/parameters-c3-c1.png" alt="" data-position="center center" width="95%" />
+    <img src="/forty-jekyll-theme/assets/images/parameterslog-model-c3-c1.png" alt="" data-position="center center" width="95%" />
     <p>In this figure we show the results obtained for the 'Inflexion day' in terms of the total growth rate; note that the end of the outbreak is simply the double of the 'Inflexion day'.</p>
 </div>
 <div class="text-fixed-left">
-    <img src="/forty-jekyll-theme/assets/images/parameters-c3-c2.png" alt="" data-position="center center" width="95%" />
+    <img src="/forty-jekyll-theme/assets/images/parameterslog-model-c3-c2.png" alt="" data-position="center center" width="95%" />
     <p>Figure for the 'Total number of deaths' and the 'Inflexion day'.</p>
 </div>
 <div style="overflow: auto; width:100%;">
-    <div w3-include-html="./assets/tables/bay_summary.html"></div>
+    <div w3-include-html="./assets/tables/bay_summarylog-model.html"></div>
 </div>
 <div class="row top-buffer"></div>
 
@@ -177,6 +177,51 @@
             <iframe width="100%" height="100%" src="https://www.youtube.com/embed/R13BD8qKeTg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
   </div>
 </div>
+
+<div class="row top-buffer"></div>
+
+<!-- Main -->
+<section id="gon">
+    <section>
+    <div class="inner">
+    <header class="major">
+        <h2>Gompertz curve model:</h2>
+    </header>
+</div>
+<p>This curve is an alternative model that could be taken at this point as upper bounds, we have realized that the logistic model tends to fit the inflexion point close to the end of the availeble data, therefore giving most likely a lower bound predicction. We are not going to discuss the origins but simply mention that this curve is a sigmoid function. </p>
+<p>Examples of uses for Gompertz curves include:</p>
+<ul>
+    <li>Modelling of growth of tumors</li>
+    <li>Modelling market impact in finance</li>
+    <li>Detailing population growth in animals of prey, with regard to predator-prey relationships</li>
+    <li>Examining disease spread</li>
+    <li>Modelling bacterial cells within a population</li>    
+</ul>
+$$N(t)=N(0)e^{-c(e^{at}-1))}$$
+<p>where:</p>
+<ul>
+    <li>$N(0)$ is the initial number of cells/organisms when time is zero</li>
+    <li>$a$ denotes the rate of growth</li>
+    <li>$b, c$ are positive numbers</li>
+    <li>$c$ denotes the displacement across the x-axis</li>
+</ul>
+    <div class="image">
+        <img src="/forty-jekyll-theme/assets/images/gompertz-modelSigmoid-simulation-linear.png" alt="" data-position="center center" width="100%" />
+    </div>
+        <div class="row top-buffer1"></div><p>In this figure we compare the current number of COVID-19 fatalities to date shown with color dots, with the multiple projections drawn from the posterior predictive distribution; these projections are shown as faint solid lines (note that the more lines we have the more likely that path will be). We have defined the zeroth time for each country to the day they announced their first fatality record. The vertical grid lines represent important events that may have affected the growth rate such as the separate lockdowns (LD) applied by China, Italy and Spain. Note that all curves have been drawn from a <a data-scroll="" href="#logistic">logistic model</a> and predict the <code># fatalities (N)</code> for each country analysed here.</p>
+    <div class="image">
+        <img src="/forty-jekyll-theme/assets/images/gompertz-modelSigmoid-simulation-log.png" alt="" data-position="center center" width="100%" />
+    </div>
+    <div class="row top-buffer1"></div>
+            <p>This figure shows the same results as the previous one but now we have changed the <code>Total # of deaths</code> axis to a logaritmic scale. This generates a visual straight line at the begining of the outbreak and it "bends down" as it surpasses the inflexion point; this point corresponds to the moment for which the evolution or the growth starts to slow down. These estimates could vary with any relaxation of the measures each country takes.</p>
+</section>
+</section>
+
+<h3>Gompertz curve model table:</h3>
+<div style="overflow: auto; width:100%;">
+    <div w3-include-html="./assets/tables/bay_summarygompertz-model.html"></div>
+</div>
+
 <div class="row top-buffer"></div>
 <!-- Sharingbutton Facebook -->
 <p>Share me 😜</p>
