@@ -13,6 +13,7 @@ show_tile: true
  
 <!-- Main -->
 <div id="main">
+This curves were obtained using the logistic model explained bellow.
     <div class="image">
         <img src="{% link assets/images/log-modelSigmoid-simulation-linear.png %}" alt="" data-position="center center" width="100%"/>
     </div>
