@@ -263,6 +263,11 @@ Share me &#128540;
     <img src="https://simplesharebuttons.com/images/somacro/twitter.png" alt="Twitter" />
 </a>
 </div>
+
+<div style="overflow: auto; width:100%;">
+    <div w3-include-html="./assets/tables/last_bayes_factor.html"></div>
+</div>
+
 <!-- 
 <div class="row top-buffer"></div>
 <div class="inner">
