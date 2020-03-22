@@ -35,7 +35,7 @@ This curves were obtained using the logistic model explained bellow.
   </div>
   <div class="column">
         <img src="{% link assets/images/fatalitieslog-model.png %}" alt="" data-position="center center" width="100%"/>
-        <p>Marginalized probability distribution on the estimated number of deaths. The prediction for China agrees with the 3226 cases reported at 17/03/2020. These cases must be taken as a lower limit to the death estimate number. Any non-expected burst of the curve may increase the number of cases. A strict confinement of the population is therefore essential.</p>
+        <p>Marginalized probability distribution on the estimated number of deaths. The prediction for China agrees with the total 3226 cases reported at 17/03/2020. These cases must be taken as a lower limit to the death estimate number. Any non-expected burst of the curve may increase the number of cases. A strict confinement of the population is therefore essential.</p>
   </div>
 </div>
 
